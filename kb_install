@@ -1,0 +1,11 @@
+
+cd X11
+cp us-umlauts /usr/share/X11/xkb/symbols/
+cd ..
+setxkbmap us-umlauts
+
+cd kbd
+gzip -k us-umlauts.map
+cp us-umlauts.map.gz /usr/share/kbd/keymaps/i386/qwerty/
+cd ..
+localectl set-keymap --no-convert us-umlauts
