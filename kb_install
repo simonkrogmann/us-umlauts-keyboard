@@ -4,6 +4,9 @@ cp us-umlauts /usr/share/X11/xkb/symbols/
 cd ..
 setxkbmap us-umlauts
 
+echo -e "[Desktop Entry]\nType=Application\nExec=setxkbmap us-umlauts" > ~/.config/autostart/set-umlauts-layout.desktop
+chmod +x ~/.config/autostart/set-umlauts-layout.desktop 
+
 cd kbd
 gzip -k us-umlauts.map
 cp us-umlauts.map.gz /usr/share/kbd/keymaps/i386/qwerty/
