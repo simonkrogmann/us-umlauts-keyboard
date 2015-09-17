@@ -3,18 +3,21 @@ include "us.map"
 keymaps 0-6,8-9,12
 
 # umlauts and more
-altgr keycode  16 = at		
+altgr keycode  2  = exclamdown
+altgr keycode  16 = at
 altgr keycode  18 = euro
 altgr keycode  22 = +udiaeresis
 altgr keycode  24 = +odiaeresis
 altgr keycode  30 = +adiaeresis
 altgr keycode  31 = ssharp
 altgr keycode  38 = pound
+keycode  41 = dead_acute
 altgr keycode  46 = copyright
 altgr keycode  49 = +ntilde
 altgr keycode  50 = mu
+altgr keycode  53 = questiondown
 
 shift altgr keycode  22 = +Udiaeresis
 shift altgr keycode  24 = +Odiaeresis
-shift altgr keycode  30	= +Adiaeresis
+shift altgr keycode  30 = +Adiaeresis
 shift altgr keycode  49 = +Ntilde
