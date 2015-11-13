@@ -8,7 +8,7 @@ setxkbmap us-umlauts
 USER_HOME=$(getent passwd $SUDO_USER | cut -d: -f6)
 AUTOSTART_FILE="$USER_HOME/.config/autostart/set-umlauts-layout.desktop"
 
-echo -e "[Desktop Entry]\nType=Application\nExec=setxkbmap us-umlauts" > $AUTOSTART_FILE
+echo -e "[Desktop Entry]\nName=Set Umlauts Layout\nType=Application\nExec=setxkbmap us-umlauts" > $AUTOSTART_FILE
 chmod +x $AUTOSTART_FILE
 
 cd kbd
