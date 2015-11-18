@@ -4,7 +4,7 @@ xkb_symbols "umlauts" {
     include "us(basic)"
     name[Group1]= "English (US, with umlauts)";
 
-    key <TLDE> { [ dead_acute, asciitilde                     ] };
+    key <TLDE> { [ grave, asciitilde,   dead_acute            ] };
 
     key <AE01> { [ 1,       exclam,     exclamdown            ] };
 
