@@ -11,7 +11,9 @@ setxkbmap us-umlauts
 
 USER_HOME=$(getent passwd $SUDO_USER | cut -d: -f6)
 AUTOSTART_FILE="$USER_HOME/.config/autostart/set-umlauts-layout.desktop"
+FOLDER=$(dirname $AUTOSTART_FILE)
 
+mkdir -p $FOLDER
 echo -e "[Desktop Entry]\nName=Set Umlauts Layout\nType=Application\nExec=setxkbmap us-umlauts" > $AUTOSTART_FILE
 chmod +x $AUTOSTART_FILE
 
