@@ -1,22 +1,13 @@
 #!/bin/sh
 if [[ $EUID -ne 0 ]]; then
-   echo "This script must be run as root" 1>&2
-   exit 1
+    echo "This script must be run as root" 1>&2
+    exit 1
 fi
 
-cd X11
-cp us-umlauts /usr/share/X11/xkb/symbols/
-cd ..
-setxkbmap us-umlauts
+cp X11/usumlauts /usr/share/X11/xkb/symbols/
+setxkbmap usumlauts
+python X11/update-fragment.py
 
-USER_HOME=$(getent passwd $SUDO_USER | cut -d: -f6)
-AUTOSTART_FILE="$USER_HOME/.config/autostart/set-umlauts-layout.desktop"
-
-echo -e "[Desktop Entry]\nName=Set Umlauts Layout\nType=Application\nExec=setxkbmap us-umlauts" > $AUTOSTART_FILE
-chmod +x $AUTOSTART_FILE
-
-cd kbd
-gzip -k us-umlauts.map
-mv us-umlauts.map.gz /usr/share/kbd/keymaps/i386/qwerty/
-cd ..
+gzip -kf kbd/us-umlauts.map
+cp kbd/us-umlauts.map.gz /usr/share/kbd/keymaps/i386/qwerty/
 localectl set-keymap --no-convert us-umlauts

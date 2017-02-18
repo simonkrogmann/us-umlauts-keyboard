@@ -1,0 +1,12 @@
+    <layout>
+      <configItem>
+        <name>usumlauts</name>
+        <shortDescription>en</shortDescription>
+        <description>English (US with umlauts)</description>
+        <languageList>
+          <iso639Id>eng</iso639Id>
+        </languageList>
+      </configItem>
+      <variantList>
+      </variantList>
+    </layout>
