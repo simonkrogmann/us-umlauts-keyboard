@@ -1,13 +1,10 @@
 #!/bin/sh
-if [[ $EUID -ne 0 ]]; then
-    echo "This script must be run as root" 1>&2
-    exit 1
-fi
-
-cp X11/usumlauts /usr/share/X11/xkb/symbols/
-setxkbmap usumlauts
-python X11/update-fragment.py
+sudo cp X11/usumlauts /usr/share/X11/xkb/symbols/
+sudo python X11/update-fragment.py
+gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'usumlauts')]"
 
 gzip -kf kbd/us-umlauts.map
-cp kbd/us-umlauts.map.gz /usr/share/kbd/keymaps/i386/qwerty/
-localectl set-keymap --no-convert us-umlauts
+sudo cp kbd/us-umlauts.map.gz /usr/share/kbd/keymaps/i386/qwerty/
+sudo localectl set-keymap --no-convert us-umlauts
+
+echo "If the keyboard doesn't work now, please restart your computer now."
