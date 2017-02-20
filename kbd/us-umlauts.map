@@ -4,6 +4,7 @@ keymaps 0-6,8-9,12
 
 # umlauts and more
 altgr keycode  2  = exclamdown
+altgr keycode  4  = section
 altgr keycode  16 = at
 altgr keycode  18 = euro
 altgr keycode  22 = +udiaeresis

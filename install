@@ -7,4 +7,4 @@ gzip -kf kbd/us-umlauts.map
 sudo cp kbd/us-umlauts.map.gz /usr/share/kbd/keymaps/i386/qwerty/
 sudo localectl set-keymap --no-convert us-umlauts
 
-echo "If the keyboard doesn't work now, please restart your computer now."
+echo "If the keyboard doesn't work now, please restart your computer."

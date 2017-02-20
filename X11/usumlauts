@@ -7,6 +7,7 @@ xkb_symbols "umlauts" {
     key <TLDE> { [ grave, asciitilde,   dead_acute            ] };
 
     key <AE01> { [ 1,       exclam,     exclamdown            ] };
+    key <AE03> { [ 3,       numbersign, section               ] };
 
     key <AD01> { [ q,       Q,          at                    ] };
     key <AD03> { [ e,       E,          EuroSign              ] };
@@ -14,11 +15,11 @@ xkb_symbols "umlauts" {
     key <AD09> { [ o,       O,          odiaeresis, Odiaeresis] };
 
     key <AC01> { [ a,       A,          adiaeresis, Adiaeresis] };
-    key <AC02> { [ s,       S,          ssharp                ] };
+    key <AC02> { [ s,       S,          ssharp,               ] };
     key <AC09> { [ l,       L,          sterling              ] };
 
     key <AB03> { [ c,       C,          copyright             ] };
-    key <AB06> { [ n,       N,          ntilde, Ntilde        ] };
+    key <AB06> { [ n,       N,          ntilde,     Ntilde    ] };
     key <AB07> { [ m,       M,          Greek_mu              ] };
     key <AB10> { [ slash,   question,   questiondown          ] };
 
