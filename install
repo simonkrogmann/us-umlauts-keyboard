@@ -1,6 +1,7 @@
 #!/bin/sh
 sudo cp X11/usumlauts /usr/share/X11/xkb/symbols/
 sudo python X11/update-fragment.py
+setxkbmap usumlauts
 gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'usumlauts')]"
 
 gzip -kf kbd/us-umlauts.map

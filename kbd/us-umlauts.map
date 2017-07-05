@@ -21,4 +21,5 @@ altgr keycode  53 = questiondown
 shift altgr keycode  22 = +Udiaeresis
 shift altgr keycode  24 = +Odiaeresis
 shift altgr keycode  30 = +Adiaeresis
+shift altgr keycode  31 = 0x1e9e
 shift altgr keycode  49 = +Ntilde
