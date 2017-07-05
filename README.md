@@ -16,6 +16,7 @@ A US keyboard layout with with german and spanish special characters and other u
 | £ | l |
 | μ | m |
 | @ | q |
+
 Additionaly AltGr+` is a dead key for creating accents (á, é, ...).
 
 ## Installation
