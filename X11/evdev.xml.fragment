@@ -1,6 +1,6 @@
     <layout>
       <configItem>
-        <name>usumlauts</name>
+        <name>us-umlauts</name>
         <shortDescription>en</shortDescription>
         <description>English (US with umlauts)</description>
         <languageList>

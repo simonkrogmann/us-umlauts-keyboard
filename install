@@ -1,8 +1,8 @@
 #!/bin/sh
-sudo cp X11/usumlauts /usr/share/X11/xkb/symbols/
+sudo cp X11/us-umlauts /usr/share/X11/xkb/symbols/
 sudo python X11/update-fragment.py
-setxkbmap usumlauts
-gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'usumlauts')]"
+setxkbmap us-umlauts
+gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us-umlauts')]"
 
 gzip -kf kbd/us-umlauts.map
 sudo cp kbd/us-umlauts.map.gz /usr/share/kbd/keymaps/i386/qwerty/

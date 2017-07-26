@@ -9,8 +9,8 @@ def main():
         fragment = f.read()
 
     # delete old
-    if "usumlauts" in content:
-        place = content.index("usumlauts")
+    if "us-umlauts" in content:
+        place = content.index("us-umlauts")
         begin = content.rindex("<layout>", 0, place)
         begin = content.rindex("\n", 0, begin)
         end = content.index("</layout>", place)
