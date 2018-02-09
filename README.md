@@ -11,7 +11,7 @@ A US keyboard layout with German and Spanish special characters and other useful
 | ¡ | 1 (!) |
 | § | 3 |
 | ¿ | / (?) |
-| € | e |
+| € | e and 5 |
 | © | c |
 | £ | l |
 | μ | m |
