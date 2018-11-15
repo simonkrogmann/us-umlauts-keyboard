@@ -19,9 +19,10 @@ xkb_symbols "umlauts" {
     key <AC02> { [ s,       S,          ssharp,     U1E9E     ] };
     key <AC09> { [ l,       L,          sterling              ] };
 
-    key <AB03> { [ c,       C,          copyright             ] };
+    key <AB03> { [ c,       C,          ccedilla,   Ccedilla  ] };
     key <AB06> { [ n,       N,          ntilde,     Ntilde    ] };
     key <AB07> { [ m,       M,          Greek_mu              ] };
+    key <AB09> { [ period,  colon,      periodcentered        ] };
     key <AB10> { [ slash,   question,   questiondown          ] };
 
     include "level3(ralt_switch)"
