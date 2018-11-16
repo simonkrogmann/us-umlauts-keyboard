@@ -22,7 +22,7 @@ xkb_symbols "umlauts" {
     key <AB03> { [ c,       C,          ccedilla,   Ccedilla  ] };
     key <AB06> { [ n,       N,          ntilde,     Ntilde    ] };
     key <AB07> { [ m,       M,          Greek_mu              ] };
-    key <AB09> { [ period,  colon,      periodcentered        ] };
+    key <AB09> { [ period,  greater,    periodcentered        ] };
     key <AB10> { [ slash,   question,   questiondown          ] };
 
     include "level3(ralt_switch)"
