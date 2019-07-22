@@ -4,7 +4,7 @@ xkb_symbols "umlauts" {
     include "us(basic)"
     name[Group1]= "English (US, with umlauts)";
 
-    key <TLDE> { [ grave,   asciitilde, dead_acute            ] };
+    key <TLDE> { [ grave,   asciitilde, dead_acute, dead_grave] };
 
     key <AE01> { [ 1,       exclam,     exclamdown            ] };
     key <AE03> { [ 3,       numbersign, section               ] };
@@ -13,6 +13,7 @@ xkb_symbols "umlauts" {
     key <AD01> { [ q,       Q,          at                    ] };
     key <AD03> { [ e,       E,          EuroSign              ] };
     key <AD07> { [ u,       U,          udiaeresis, Udiaeresis] };
+    key <AD08> { [ i,       I,          idiaeresis, Idiaeresis] };
     key <AD09> { [ o,       O,          odiaeresis, Odiaeresis] };
 
     key <AC01> { [ a,       A,          adiaeresis, Adiaeresis] };

@@ -5,6 +5,7 @@ A US keyboard layout with German, Spanish and Catalan special characters and oth
 | --------- | --------- |
 | ä | a |
 | ö | o |
+| ï | i |
 | ü | u |
 | ß | s |
 | ñ | n |
@@ -18,8 +19,8 @@ A US keyboard layout with German, Spanish and Catalan special characters and oth
 | @ | q |
 | · | . |
 
-Additionally, AltGr+` is a dead key for creating accents (á, é, ...).
-However, the grave accent (`) is not yet included.
+Additionally, AltGr+` is a dead key for creating accents:
+AltGr+` for á, é, ... and Shift+AltGr+` for à, è, ...
 
 ## Installation
 Layouts for X11 and kbd are included. The installation script works for Gnome installed on Arch Linux. For other setups the keyboard layout should probably be changed manually.
