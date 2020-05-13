@@ -3,17 +3,17 @@ A US keyboard layout with German, Spanish and Catalan special characters and oth
 
 | Character | On Key | Notes |
 | --------- | --------- | ----- |
-| ä | a |
-| ö | o |
-| ï | i |
-| ü | u |
-| ß | s |
-| ñ | n |
+| ä, Ä | a |
+| ö, Ö | o |
+| ü, Ü | u |
+| ï, Ï | i |
+| ß, ẞ | s |
+| ñ, Ñ | n |
+| ç, Ç | c |
 | ¡ | 1 (!) |
 | § | 3 |
-| ¿ | / (?) |
 | € | e and 5 |
-| ç | c |
+| ¿ | / (?) |
 | £ | l |
 | μ | m |
 | @ | q | Make it easier for Germans to type their e-mail address on your device |
